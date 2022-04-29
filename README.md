@@ -25,8 +25,10 @@ with:
 #### This will generate the following JSON:
 
 ``` json
-{"super-secret":"[your-super-secret]","CONNECTION_STRING":"[your-connection-string]"}
+{"super-secret":"[your-super-secret]","connection_string":"[your-connection-string]"}
 ```
+
+Note: All keys will be converted to lowercase.
 
 You can later pass it's path as an input for another program (e.g. [`claudia.js`](https://claudiajs.com/), which receives a JSON in `--set-env-from-json`)
 
